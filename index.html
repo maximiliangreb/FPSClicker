@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>FPSClicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <!-- cpu-row ist links die spalte -->
+        <div class="cpu-row">
+            <div>
+                <p class="side-headline">CPU</p>
+            </div>
+            <div class="upgrade-container">
+                <div class="cpu-row-content" data-price="10" data-value="1" data-name="Intel 8008" data-type="side" id="cpu">
+                    <p style="display: inline-block;">
+                        <b>10 Money</b> <br>
+                        +1 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel 8008</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="100" data-value="5" data-name="AMD Am486" data-type="side" id="cpu">
+                    <p>
+                        <b>100 Money</b> <br>
+                        +5 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Am486</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="1000" data-value="10" data-name="Intel Core i3-540" data-type="side" id="cpu">
+                    <p>
+                        <b>1000 Money</b> <br>
+                        +10 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i3-540</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="3000" data-value="20" data-name="AMD Ryzen 3 1200" data-type="side" id="cpu">
+                    <p>
+                        <b>3000 Money</b> <br>
+                        +20 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 3 1200</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="5100" data-value="50" data-name="Intel i3-3220" data-type="side" id="cpu">
+                    <p>
+                        <b>5100 Money</b> <br>
+                        +50 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel i3-3220</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="10500" data-value="100" data-name="AMD Ryzen 3 2200G" data-type="side" id="cpu">
+                    <p>
+                        <b>10500 Money</b> <br>
+                        +100 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 3 2200G</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="50000" data-value="250" data-name="Intel Core i5-650" data-type="side" id="cpu">
+                    <p>
+                        <b>50000 Money</b> <br>
+                        +250 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i5-650</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="100000" data-value="700" data-name="AMD Ryzen 5 1600" data-type="side" id="cpu">
+                    <p>
+                        <b>100000 Money</b> <br>
+                        +700 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 5 1600</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="500000" data-value="1250" data-name="Intel Core i5-12600K" data-type="side" id="cpu">
+                    <p>
+                        <b>500000 Money</b> <br>
+                        +1250 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i5-12600K</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="1000000" data-value="8000" data-name="AMD Ryzen 5 7500F" data-type="side" id="cpu">
+                    <p>
+                        <b>1 Mio Money</b> <br>
+                        +8000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 5 7500F</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="5000000" data-value="15000" data-name="Intel Core i7 950" data-type="side" id="cpu">
+                    <p>
+                        <b>5 Mio Money</b> <br>
+                        +15000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i7 950</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="10000000" data-value="25000" data-name="AMD Ryzen 7 1700" data-type="side" id="cpu">
+                    <p>
+                        <b>10 Mio Money</b> <br>
+                        +25000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 7 1700</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="25000000" data-value="50000" data-name="Intel Core i7-13700K" data-type="side" id="cpu">
+                    <p>
+                        <b>25 Mio Money</b> <br>
+                        +50000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i7-13700K</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="50000000" data-value="70000" data-name="AMD Ryzen 7 9800X3D" data-type="side" id="cpu">
+                    <p>
+                        <b>50 Mio Money</b> <br>
+                        +70000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 7 9800X3D</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content"data-price="100000000" data-value="80000" data-name="Intel Core i9-13900K" data-type="side" id="cpu">
+                    <p>
+                        <b>100 Mio Money</b> <br>
+                        +80000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>Intel Core i9-13900K</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" data-price="150000000" data-value="100000" data-name="AMD Ryzen 9 9950X" data-type="side" id="cpu">
+                    <p>
+                        <b>150 Mio Money</b> <br>
+                        +100000 FPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Ryzen 9 9950X</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- middle-row ist die komplette mitte (oben und unten) -->
+        <div class="middle-row">
+            <!-- Oberer part -->
+            <div class="upgrades-row">
+                <div class="grid-container">
+                    <div class="grid-upgrade" data-name="1" data-price="1000">x2 FPS 1000</div>
+                    <div class="grid-upgrade" data-name="2" data-price="5000">x2 CPS 5000</div>
+                    <div class="grid-upgrade" data-name="3" data-price="1000000">half price CPU 1M</div>  
+                    <div class="grid-upgrade" data-name="4" data-price="5000000">half price GPU 5M</div>
+                    <div class="grid-upgrade" data-name="5" data-price="100000000">x2 Money 100M</div>
+                    <div class="grid-upgrade" data-name="6" data-price="500000000">+20% for x2 CPS  500M</div>  
+                    <div class="grid-upgrade" data-name="7" data-price="2000000000">+50% for x2 CPS 2B</div>
+                    <div class="grid-upgrade" data-name="8" data-price="5000000000">x2 FPS 5B</div>
+                    <div class="grid-upgrade" data-name="9" data-price="10000000000">x2 CPS 10B</div>
+                    <div class="grid-upgrade" data-name="10" data-price="50000000000">100% for x2 CPS 50B</div>
+                    <div class="grid-upgrade" data-name="11" data-price="100000000000">+10% for x5 CPS 100B</div>
+                    <div class="grid-upgrade" data-name="12" data-price="200000000000">half price CPU 200B</div>
+                    <div class="grid-upgrade" data-name="13" data-price="500000000000">half price GPU 500B</div>
+                    <div class="grid-upgrade" data-name="14" data-price="750000000000">100% for x5 CPS 750B</div>
+                    <div class="grid-upgrade" data-name="15" data-price="999000000000">x2 Money 999B</div>
+                </div>
+            </div>
+            <!-- Unterer part -->
+            <div class="clicker-row">
+                <div>
+                    <p class="headline">Clicker</p>
+                </div>
+                <div>
+                    <p class="cps-counter" id="cps">CPS: 1.0</p>
+                    <p class="money-counter" id="money">Geld: 0</p>
+                    <p class="fps-counter" id="fps">FPS: 0</p>
+                </div>
+                <!-- ClickerButton -->
+                <div class="clicker-button-div">
+                    <div class="clicker-button" id="clicker"></div>
+                </div>
+            </div>
+        </div>
+        <!-- gpu-row ist rechts die spalte -->
+        <div class="gpu-row">
+            <div>
+                <p class="side-headline">GPU</p>
+            </div>
+            <div class="upgrade-container">
+                <div class="cpu-row-content" id="gpu" data-price="10" data-value="0.1" data-name="NVIDIA GeForce 256" data-type="side">
+                    <p>
+                        <b>10 Money</b> <br>
+                        +0.1 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce 256</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="100" data-value="1" data-name="ATI Radeon 9700 Pro" data-type="side">
+                    <p>
+                        <b>100 Money</b> <br>
+                        +1 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>ATI Radeon 9700 Pro</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="2000" data-value="10" data-name="NVIDIA GeForce 6800 Ultra" data-type="side">
+                    <p>
+                        <b>2000 Money</b> <br>
+                        +10 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce 6800 Ultra</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="25000" data-value="35" data-name="AMD Radeon HD 5870" data-type="side">
+                    <p>
+                        <b>25000 Money</b> <br>
+                        +35 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>AMD Radeon HD 5870</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="100000" data-value="100" data-name="NVIDIA GeForce GTX 980" data-type="side">
+                    <p>
+                        <b>100000 Money</b> <br>
+                        +100 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce GTX 980</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="500000" data-value="150" data-name="NVIDIA GeForce 6800 Ultra" data-type="side">
+                    <p>
+                        <b>500000 Money</b> <br>
+                        +150 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce GTX 1080</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="1000000" data-value="200" data-name="NVIDIA GeForce RTX 2060 SUPER" data-type="side">
+                    <p>
+                        <b>1M Money</b> <br>
+                        +200 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce RTX 2060 SUPER</b>
+                    </p>
+                </div>
+                <div class="cpu-row-content" id="gpu" data-price="10000000" data-value="500" data-name="NVIDIA GeForce RTX 5090" data-type="side">
+                    <p>
+                        <b>10M Money</b> <br>
+                        +500 CPS
+                    </p>
+                    <p class="cpu-upgrade-name">
+                        <b>NVIDIA GeForce RTX 5090</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <button class="save-menu-button" id="save-menu-button" onClick="Open_Close_Save_Menu()">Save-Menu</button>
+
+    <div class="save-container" id="save-container">
+        
+    </div>
+    <p class="version" style="color: black;">Version 2.3</p>
+    
+    
+    <script src="pdf.js"></script>
+</body>
+</html>
