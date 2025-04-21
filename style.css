@@ -1,3 +1,4 @@
+/* General styles */
 html, body {
     height: 100%;
     width: 100%;
@@ -75,17 +76,16 @@ html, body {
     vertical-align: top;
     text-align: center;
     margin-top: 3%;
-    
 }
 
 .headline, .side-headline {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     color: white;
 }
 
 p {
-    margin-left: 0.625rem; 
-    font-size: 0.9375rem; 
+    margin-left: 0.625rem;
+    font-size: 0.9375rem;
 }
 
 div {
@@ -133,14 +133,13 @@ div {
     margin-top: -2%;
     margin-bottom: 3%;
     width: 91%;
-    height: 3.125rem; 
+    height: 3.125rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px; 
+    padding: 0 10px;
 }
-
 
 .upgrade-container {
     height: 100vh;
@@ -154,15 +153,15 @@ div {
     top: 0;
     right: 1%;
     color: white;
-    font-size: 0.625rem; 
+    font-size: 0.625rem;
 }
+
 img {
     pointer-events: none;
 }
 
 .cpu-upgrade-name {
     text-align: right;
-    margin:0;
     margin: 0;
 }
 
@@ -184,14 +183,16 @@ img {
     align-items: center;
     padding: 0 10px;
 }
-.cps-counter{
+
+.cps-counter {
     color: white;
     position: absolute;
-    left:  37%;
+    left: 37%;
     right: 40%;
     top: 10%;
     font-size: 51%;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -203,8 +204,8 @@ img {
     scrollbar-width: none;
     height: 84%;
     width: 90%;
-  }
-  
+}
+
 .grid-container > div.grid-upgrade {
     background-image: url('images/Upgrades/upgrade-upgrade.png');
     background-size: cover;
@@ -216,7 +217,8 @@ img {
     width: 70%;
     cursor: pointer;
 }
-.save-container{
+
+.save-container {
     position: absolute;
     background-color: gray;
     border: 3px solid black;
@@ -227,7 +229,8 @@ img {
     background-image: url('images/Upgrades/cpu-upgrades.png');
     background-size: auto;
 }
-.save-menu-button{
+
+.save-menu-button {
     position: absolute;
     left: 0;
     top: 0;
@@ -237,30 +240,116 @@ img {
     font-family: "Pixelify Sans";
     background-color: rgb(44, 29, 29);
 }
-.save-menu-button:hover{
+
+.save-menu-button:hover {
     opacity: 0.9;
 }
-.save-menu-button:active{
+
+.save-menu-button:active {
     opacity: 0.7;
 }
-.save-container > p{
+
+.save-container > p {
     margin-top: 10%;
     font-size: 200%;
     user-select: text;
 }
-.save-container > button, .save-container > input{
+
+.save-container > button,
+.save-container > input {
     font-size: 120%;
     background-image: url(images/UI/save-buttons.png);
     background-size: contain;
 }
-h3{
+
+h3 {
     margin: 0;
 }
-#save-shower{
+
+#save-shower {
     margin-right: 50px;
 }
-.save-container > .tutorial-text{
+
+.save-container > .tutorial-text {
     margin-top: 0;
     margin-bottom: 100px;
     font-size: 50%;
+}
+
+/* Mobile Optimized Styles */
+
+/* Viewport: small screens like phones */
+@media (max-width: 768px) {
+
+    /* Make body background red for test */
+    body {
+        background-color: red !important;
+    }
+
+    /* Make clicker button smaller */
+    .clicker-button {
+        width: 6rem !important;
+        height: 6rem !important;
+    }
+
+    /* Adjust headline font size */
+    .headline {
+        font-size: 1.2rem !important;
+    }
+
+    /* Hide cpu-row and gpu-row on mobile */
+    .cpu-row, .gpu-row {
+        display: none !important;
+    }
+
+    /* Middle row takes full width on mobile */
+    .middle-row {
+        width: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        position: relative !important;
+    }
+
+    /* Adjust money counter and fps counter to be centered */
+    .money-counter, .fps-counter, .cps-counter {
+        position: static !important;
+        font-size: 1rem !important;
+        text-align: center !important;
+        margin-top: 1rem !important;
+    }
+
+    /* Make grid 2 columns instead of 4 */
+    .grid-container {
+        grid-template-columns: 1fr 1fr !important;
+        width: 100% !important;
+        margin: 1rem auto !important;
+    }
+
+    /* Smaller upgrade grid items */
+    .grid-container > div.grid-upgrade {
+        width: 90% !important;
+        height: auto !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Adjust save container layout */
+    .save-container {
+        width: 90% !important;
+        margin: 1rem auto !important;
+        position: relative !important;
+    }
+
+    .save-menu-button {
+        font-size: 1rem !important;
+    }
+
+    /* Adjust save button/input size */
+    .save-container > button,
+    .save-container > input {
+        font-size: 1rem !important;
+    }
+
+    .save-container > p {
+        font-size: 1.5rem !important;
+    }
 }
